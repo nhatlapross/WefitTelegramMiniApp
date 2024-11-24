@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  background-color: #010B14;
+  border-radius: 16px;
+  border: 1px solid var(--color-border, rgba(255, 240, 235, 0.10));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.button {
+  background: #521400;
+  color: white;
+}
+
+.card {
+  margin-top: 26px;
+  padding: 16px 12px;
+  background: rgb(1, 11, 20);
+  background: linear-gradient(90deg, rgba(1, 11, 20, 1) 0%, rgba(1, 11, 20, 0.7) 50%, rgba(1, 11, 20, 1) 100%);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.footer {
+  padding: 40px 20px 20px;
+  background-image: url('../asset/footer-bg.png');
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+}
