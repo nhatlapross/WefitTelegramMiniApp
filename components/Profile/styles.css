@@ -1,0 +1,35 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 130px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 245px;
+  height: 360px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.mySwiper .swiper-slide {
+  box-shadow: rgba(0, 0, 0, 1) 1px 4px -5px; /* Adjust the rgba values for shadow intensity */
+}

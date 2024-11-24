@@ -1,0 +1,17 @@
+.tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  gap: 12px;
+  align-items: flex-end;
+  overflow-x: scroll;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  /* Chrome, Safari and Opera */
+  display: none;
+}

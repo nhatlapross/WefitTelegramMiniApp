@@ -1,0 +1,38 @@
+.root {
+  cursor: pointer;
+  justify-content: center;
+  transition: all 0.25s ease;
+  font-size: medium;
+  font-weight: bold;
+
+  &:not(.disabled).activated {
+    padding: 4px 12px;
+    color: #FF7547;
+    background: #FFF0EB;
+    font-weight: bold;
+    border: 1px solid #FFE0D6;
+    border-radius: 4px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  &:not(.disabled) {
+    padding: 4px 12px;
+    color: #81819C;
+    font-weight: bold;
+    border: 1px solid rgba(82, 20, 0, 0.10);
+    border-radius: 4px;
+
+  }
+
+  &.disabled {
+    cursor: unset;
+    pointer-events: none;
+    color: grey;
+    border-bottom: 2px solid transparent;
+  }
+
+  &.full-width {
+    flex: auto;
+  }
+}
